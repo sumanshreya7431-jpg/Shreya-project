@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenFuture | Sustainable Development</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ANIMATED BACKGROUND -->
+<div class="background">
+    <span>🍃</span>
+    <span>🌿</span>
+    <span>🍀</span>
+    <span>🌱</span>
+    <span>🍃</span>
+    <span>🌿</span>
+</div>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+    <div class="logo">🌍 GreenFuture</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Our Team</a>
+        <a href="#sdgs">SDGs</a>
+        <a href="#city">Green City</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#pledge">Pledge</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="home">
+
+    <div class="home-content">
+
+        <div class="earth">🌍</div>
+
+        <h1>
+            SUSTAINABLE<br>
+            <span>DEVELOPMENT</span>
+        </h1>
+
+        <p class="tagline">
+            🌱 Small Actions • Big Changes 🌱
+        </p>
+
+        <p class="intro">
+
+            Welcome to <b>GreenFuture</b> — a student-created website
+            that explores how we can protect our planet while creating
+            a better future for everyone.
+
+        </p>
+
+        <a href="#team" class="main-button">
+            Meet Our Team 👩‍💻
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section id="about" class="about">
+
+    <h2>🌱 Introduction</h2>
+
+    <div class="glass">
+
+        <h3>What is Sustainable Development?</h3>
+
+        <p>
+
+            Sustainable development means meeting our needs today
+            without harming the ability of future generations to meet
+            their own needs.
+
+        </p>
+
+        <div class="three-points">
+
+            <div>
+                🌍
+                <h3>Protect Earth</h3>
+                <p>Care for nature and wildlife.</p>
+            </div>
+
+            <div>
+                ♻️
+                <h3>Use Resources Wisely</h3>
+                <p>Reduce waste and save resources.</p>
+            </div>
+
+            <div>
+                🌱
+                <h3>Build a Better Future</h3>
+                <p>Create a cleaner and healthier world.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TEAM ================= -->
+
+<section id="team" class="team">
+
+    <h2>👩‍💻 Meet Our Team</h2>
+
+    <p class="section-subtitle">
+        Three friends. One planet. One mission. 🌍
+    </p>
+
+
+    <div class="team-container">
+
+        <!-- LEADER -->
+
+        <div class="person leader">
+
+            <div class="photo-wrap">
+                <img class="photo"
+                     src="https://res.cloudinary.com/r9ry0ase/image/upload/f_auto,q_auto/WhatsApp_Image_2026-10-09_at_22.17.23"
+                     alt="Shreya Suman, Team Leader"
+                     width="160" height="160"
+                     loading="lazy">
+            </div>
+
+            <div class="leader-badge">
+                TEAM LEADER
+            </div>
+
+            <h3>Shreya Suman</h3>
+
+            <p>
+                Team Leader
+            </p>
+
+            <span>
+                🌱 Leading the mission for a greener future!
+            </span>
+
+        </div>
+
+
+        <!-- SHRUTI kumari -->
+
+        <div class="person">
+
+            <div class="photo-wrap">
+                <img class="photo"
+                     src="https://res.cloudinary.com/iuqdq9sr/image/upload/c_crop,ar_2:1,w_1.0,g_center/c_fill,ar_1:1,w_400,g_face/f_auto,q_auto/PHOTO-2026-10-10-09-58-25"
+                     alt="Shruti Kumari, Team Member"
+                     width="160" height="160"
+                     loading="lazy">
+            </div>
+
+            <h3>Shruti kumari</h3>
+
+            <p>Team Member</p>
+
+            <span>
+                💡 Bringing creative ideas for sustainability.
+            </span>
+
+        </div>
+
+
+        <!-- SHANVI Sathpathy -->
+
+        <div class="person">
+
+            <div class="photo-wrap">
+                <img class="photo"
+                     src="https://res.cloudinary.com/iuqdq9sr/image/upload/e_trim:25/c_fill,ar_1:1,w_400,g_face/f_auto,q_auto/834082292_1463491099025781_1765929990981482949_n"
+                     data-f="https://res.cloudinary.com/iuqdq9sr/image/upload/e_trim:25/c_fill,ar_1:1,w_400,g_face/f_auto,q_auto/834082292_1463491099025781_1765929990981482949_n.|https://res.cloudinary.com/iuqdq9sr/image/upload/e_trim:25/c_fill,ar_1:1,w_400,g_face/f_auto,q_auto/834082292_1463491099025781_1765929990981482949_n.jpg|https://res.cloudinary.com/iuqdq9sr/image/upload/e_trim:25/c_fill,ar_1:1,w_400,g_face/f_auto,q_auto/834082292_1463491099025781_1765929990981482949_n.jpeg|https://res.cloudinary.com/iuqdq9sr/image/upload/e_trim:25/c_fill,ar_1:1,w_400,g_face/f_auto,q_auto/834082292_1463491099025781_1765929990981482949_n.png"
+                     onerror="var f=(this.dataset.f||'').split('|').filter(Boolean);if(f.length){this.dataset.f=f.slice(1).join('|');this.src=f[0];}"
+                     alt="Ashiplipsa Jeena, Team Member"
+                     width="160" height="160"
+                     loading="lazy">
+            </div>
+
+            <h3>Ashiplipsa Jeena</h3>
+
+            <p>Team Member</p>
+
+            <span>
+                💻 Helping create our digital GreenFuture.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SDGs ================= -->
+
+<section id="sdgs" class="sdgs">
+
+    <h2>🎯 The 17 Sustainable Development Goals</h2>
+
+    <p class="section-subtitle">
+        Global goals for a better and more sustainable world.<br>
+        <span class="tap-hint">👆 Tap a goal to read more about it</span>
+    </p>
+
+    <!-- The 17 goal cards are built by script.js -->
+    <div class="sdg-grid" id="sdgGrid"></div>
+
+</section>
+
+
+<!-- ================= HELP ================= -->
+
+<section class="help">
+
+    <h2>♻️ How Can WE Help?</h2>
+
+    <div class="help-grid">
+
+        <div class="help-card">
+            <div>💧</div>
+            <h3>Save Water</h3>
+            <p>Close taps and avoid wasting water.</p>
+        </div>
+
+        <div class="help-card">
+            <div>⚡</div>
+            <h3>Save Energy</h3>
+            <p>Switch off lights and appliances.</p>
+        </div>
+
+        <div class="help-card">
+            <div>🌳</div>
+            <h3>Plant Trees</h3>
+            <p>Protect forests and green spaces.</p>
+        </div>
+
+        <div class="help-card">
+            <div>♻️</div>
+            <h3>Recycle</h3>
+            <p>Reduce, reuse and recycle waste.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GREEN CITY ================= -->
+
+<section id="city" class="city-section">
+
+    <h2>🏙️ The Sustainable City of the Future</h2>
+
+    <p class="section-subtitle">
+        Imagine a city where technology and nature work together.
+    </p>
+
+
+    <div class="city">
+
+        <div class="city-card">
+            ☀️
+            <h3>Solar Energy</h3>
+            <p>Clean energy from the Sun.</p>
+        </div>
+
+        <div class="city-card">
+            🌳
+            <h3>Green Parks</h3>
+            <p>More trees and fresh air.</p>
+        </div>
+
+        <div class="city-card">
+            🚌
+            <h3>Electric Transport</h3>
+            <p>Cleaner public transportation.</p>
+        </div>
+
+        <div class="city-card">
+            🚲
+            <h3>Cycle Lanes</h3>
+            <p>Healthy and pollution-free travel.</p>
+        </div>
+
+        <div class="city-card">
+            💧
+            <h3>Rainwater Harvesting</h3>
+            <p>Collecting and reusing rainwater.</p>
+        </div>
+
+        <div class="city-card">
+            ♻️
+            <h3>Recycling Centres</h3>
+            <p>Turning waste into useful materials.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUIZ ================= -->
+
+<section id="quiz" class="quiz">
+
+    <h2>🎮 Sustainability Challenge</h2>
+
+    <div class="quiz-box">
+
+        <h3 id="question">
+            Which source of energy is renewable?
+        </h3>
+
+        <button onclick="answer(0)">🛢️ Petroleum</button>
+
+        <button onclick="answer(1)">⛏️ Coal</button>
+
+        <button onclick="answer(2)">☀️ Solar Energy</button>
+
+        <button onclick="answer(3)">🔥 Natural Gas</button>
+
+        <p id="result"></p>
+
+        <button class="next" onclick="nextQuestion()">
+            Next Question ➡️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ECO SCORE ================= -->
+
+<section class="eco-section">
+
+    <h2>🌱 Find Your Eco Score</h2>
+
+    <div class="eco-box">
+
+        <label>
+            <input type="checkbox" class="eco">
+            💡 I switch off unnecessary lights.
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco">
+            💧 I save water.
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco">
+            ♻️ I reuse and recycle things.
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco">
+            🍎 I avoid wasting food.
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco">
+            🌳 I protect or plant trees.
+        </label>
+
+        <button class="main-button" onclick="calculateScore()">
+            Calculate Score 🌍
+        </button>
+
+        <h3 id="ecoResult"></h3>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INDIA ================= -->
+
+<section class="india">
+
+    <h2>🇮🇳 India & Sustainable Development</h2>
+
+    <div class="india-grid">
+
+        <div>☀️ Solar Energy</div>
+
+        <div>🚆 Clean Transport</div>
+
+        <div>🌳 Afforestation</div>
+
+        <div>💧 Water Conservation</div>
+
+        <div>♻️ Waste Management</div>
+
+        <div>🏙️ Sustainable Cities</div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GREEN PLEDGE ================= -->
+
+<section id="pledge" class="pledge">
+
+    <h2>🤝 Take the Green Pledge</h2>
+
+    <div class="pledge-box">
+
+        <div class="big-leaf">🌱</div>
+
+        <h3>My Green Pledge</h3>
+
+        <p>
+
+            I pledge to save water and energy,
+            reduce waste, protect nature and make
+            responsible choices for a sustainable future.
+
+        </p>
+
+        <button class="pledge-button" onclick="pledge()">
+            I PLEDGE 🌍
+        </button>
+
+        <h3 id="pledgeMessage"></h3>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>🌍 GreenFuture</h2>
+
+    <p>
+        Made with 💚 by
+        <b>Shreya Suman • Shruti • Shanvi</b>
+    </p>
+
+    <p>
+        Class 8 ICT Exhibition
+    </p>
+
+    <p>
+        🌱 Small Actions Today • A Better Tomorrow 🌱
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
