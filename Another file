@@ -1,0 +1,1045 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #041c15;
+    overflow-x: hidden;
+}
+
+/* Sections stop below the sticky header when a nav link is clicked */
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* ================= BACKGROUND ================= */
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 20%, #0d7652, transparent 35%),
+        radial-gradient(circle at 80% 80%, #075985, transparent 35%),
+        linear-gradient(135deg, #031b16, #063b2c);
+}
+
+.background span {
+    position: absolute;
+    font-size: 35px;
+    opacity: 0.25;
+    animation: move 12s linear infinite;
+}
+
+.background span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.background span:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.background span:nth-child(3) {
+    left: 45%;
+    animation-delay: 4s;
+}
+
+.background span:nth-child(4) {
+    left: 65%;
+    animation-delay: 1s;
+}
+
+.background span:nth-child(5) {
+    left: 80%;
+    animation-delay: 3s;
+}
+
+.background span:nth-child(6) {
+    left: 90%;
+    animation-delay: 5s;
+}
+
+@keyframes move {
+
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+    }
+}
+
+
+/* ================= NAVIGATION ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 6%;
+
+    background: rgba(2, 31, 23, 0.85);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7dffb2;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home-content {
+    max-width: 900px;
+}
+
+.earth {
+    font-size: 150px;
+
+    animation:
+        float 4s ease-in-out infinite,
+        rotateEarth 20s linear infinite;
+
+    filter: drop-shadow(0 0 30px #32e875);
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotateEarth {
+
+    from {
+        filter: drop-shadow(0 0 15px #32e875);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 50px #35d9ff);
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px #32e875);
+    }
+}
+
+.home h1 {
+    font-size: 70px;
+    letter-spacing: 4px;
+    margin: 20px 0;
+}
+
+.home h1 span {
+    color: #62ff9b;
+}
+
+.tagline {
+    font-size: 25px;
+    color: #a9ffd0;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #d5fff0;
+}
+
+
+/* ================= BUTTON ================= */
+
+.main-button,
+.pledge-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: linear-gradient(90deg, #19c56b, #08a6c9);
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 20px rgba(30,220,120,0.4);
+}
+
+.main-button:hover,
+.pledge-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(50,255,150,0.7);
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 90px 7%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #75ffab;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #c8f9dd;
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+
+
+/* ================= GLASS ================= */
+
+.glass,
+.person,
+.help-card,
+.city-card,
+.quiz-box,
+.eco-box,
+.pledge-box,
+.india-grid div,
+.sdg {
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+
+}
+
+
+/* ================= ABOUT ================= */
+
+.glass {
+    max-width: 1000px;
+    margin: auto;
+    padding: 45px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.glass h3 {
+    font-size: 25px;
+    color: #7dffb2;
+    margin-bottom: 15px;
+}
+
+.glass p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.three-points {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.three-points div {
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(0,255,130,0.08);
+}
+
+
+/* ================= TEAM ================= */
+
+.team-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+}
+
+.person {
+    text-align: center;
+    padding: 40px 25px;
+
+    border-radius: 30px;
+
+    transition: 0.4s;
+}
+
+.person:hover {
+    transform: translateY(-15px) scale(1.03);
+}
+
+.avatar {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.person h3 {
+    font-size: 25px;
+    color: #78ffad;
+}
+
+.person p {
+    margin: 10px;
+    color: #8ce8ff;
+}
+
+.person span {
+    display: block;
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #d5fff0;
+}
+
+.leader {
+    border: 2px solid #ffd84d;
+    box-shadow: 0 0 30px rgba(255,216,77,0.25);
+}
+
+/* ----- Shreya's photo ----- */
+
+.photo-wrap {
+    position: relative;
+
+    width: 160px;
+    height: 160px;
+
+    margin: 0 auto 18px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    border-radius: 50%;
+
+    /* fills the circle without stretching; keeps the face/head in view */
+    object-fit: cover;
+    object-position: center 20%;
+
+    /* respects the phone's rotation info so the photo stands upright */
+    image-orientation: from-image;
+
+    border: 4px solid #ffd84d;
+    box-shadow: 0 0 25px rgba(255,216,77,0.45);
+}
+
+/* team members (not the leader) get a green ring */
+.person:not(.leader) .photo {
+    border-color: #7dffb2;
+    box-shadow: 0 0 25px rgba(125,255,178,0.4);
+}
+
+@media(max-width:600px) {
+
+    .photo-wrap {
+        width: 140px;
+        height: 140px;
+    }
+
+}
+
+.leader-badge {
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 20px;
+    background: #ffd84d;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* ================= SDGS (ACCORDION) ================= */
+
+.sdgs {
+    background: rgba(0,0,0,0.12);
+}
+
+.tap-hint {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #8ce8ff;
+}
+
+/* align-items:start => opening one card never stretches its neighbours */
+.sdg-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    align-items: start;
+
+    gap: 18px;
+}
+
+.sdg {
+    --c: #19c56b;               /* goal colour, set from JS */
+
+    position: relative;
+    min-width: 0;               /* lets grid items shrink: no overflow */
+    overflow: hidden;
+
+    border-radius: 20px;
+    border-left: 5px solid var(--c);
+
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.sdg:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.12);
+}
+
+.sdg.open {
+    background: rgba(255,255,255,0.13);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3), 0 0 0 1px var(--c);
+}
+
+/* ----- clickable header ----- */
+
+.sdg-head {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 18px 20px;
+
+    background: none;
+    border: none;
+    color: #ffffff;
+
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sdg-head:focus-visible {
+    outline: 3px solid #7dffb2;
+    outline-offset: -3px;
+    border-radius: 18px;
+}
+
+.sdg-num {
+    flex: 0 0 auto;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: var(--c);
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+.sdg-title {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #8affb5;
+
+    overflow-wrap: anywhere;
+}
+
+.sdg-emoji {
+    flex: 0 0 auto;
+    font-size: 26px;
+}
+
+.sdg-chevron {
+    flex: 0 0 auto;
+
+    width: 11px;
+    height: 11px;
+
+    border-right: 3px solid #c8f9dd;
+    border-bottom: 3px solid #c8f9dd;
+
+    transform: rotate(45deg);
+    margin: -4px 4px 0 2px;
+
+    transition: transform 0.35s;
+}
+
+.sdg.open .sdg-chevron {
+    transform: rotate(-135deg);
+    margin-top: 4px;
+}
+
+/* ----- smooth dropdown panel ----- */
+
+.sdg-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+
+    transition: grid-template-rows 0.4s ease, visibility 0.4s;
+}
+
+.sdg.open .sdg-panel {
+    grid-template-rows: 1fr;
+    visibility: visible;
+}
+
+.sdg-panel-inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.sdg-body {
+    margin: 0 20px 20px;
+    padding-top: 18px;
+
+    border-top: 1px dashed rgba(255,255,255,0.25);
+
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.sdg-tagline {
+    display: inline-block;
+    max-width: 100%;
+
+    margin-bottom: 12px;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: var(--c);
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+.sdg-desc {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #e3fff2;
+}
+
+.sdg-body h4 {
+    margin: 18px 0 8px;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8ce8ff;
+}
+
+.sdg-list {
+    list-style: none;
+}
+
+.sdg-list li {
+    position: relative;
+
+    padding: 4px 0 4px 24px;
+
+    font-size: 15px;
+    line-height: 1.55;
+    color: #d5fff0;
+}
+
+.sdg-list li::before {
+    content: "✔";
+
+    position: absolute;
+    left: 0;
+    top: 4px;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #7dffb2;
+}
+
+.sdg-fact,
+.sdg-action {
+    margin-top: 16px;
+    padding: 14px 16px;
+
+    border-radius: 14px;
+
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+.sdg-fact {
+    background: rgba(140,232,255,0.1);
+    border: 1px solid rgba(140,232,255,0.3);
+    color: #d9f6ff;
+}
+
+.sdg-action {
+    background: rgba(125,255,178,0.1);
+    border: 1px solid rgba(125,255,178,0.3);
+    color: #dbffe9;
+}
+
+.sdg-fact b,
+.sdg-action b {
+    display: block;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+
+/* ================= HELP ================= */
+
+.help-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.help-card {
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.help-card:hover {
+    transform: scale(1.05);
+}
+
+.help-card div {
+    font-size: 55px;
+}
+
+.help-card h3 {
+    margin: 15px 0;
+    color: #79ffad;
+}
+
+.help-card p {
+    color: #c9eedd;
+    line-height: 1.5;
+}
+
+
+/* ================= CITY ================= */
+
+.city-section {
+    background: rgba(0,0,0,0.15);
+}
+
+.city {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.city-card {
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+
+    font-size: 50px;
+
+    transition: 0.4s;
+}
+
+.city-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(30,220,130,0.3);
+}
+
+.city-card h3 {
+    font-size: 21px;
+    color: #79ffad;
+    margin: 15px;
+}
+
+.city-card p {
+    font-size: 16px;
+    color: #c9eedd;
+}
+
+
+/* ================= QUIZ ================= */
+
+.quiz-box {
+    max-width: 700px;
+    margin: 40px auto;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+.quiz-box h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.quiz-box button {
+    width: 100%;
+
+    margin: 8px 0;
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 1px solid #49e995;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.quiz-box button:hover {
+    background: #19a85e;
+}
+
+.quiz-box .next {
+    background: linear-gradient(90deg,#19c56b,#08a6c9);
+}
+
+
+/* ================= ECO ================= */
+
+.eco-section {
+    background: rgba(0,0,0,0.15);
+}
+
+.eco-box {
+    max-width: 650px;
+    margin: auto;
+
+    padding: 40px;
+
+    border-radius: 30px;
+}
+
+.eco-box label {
+    display: block;
+
+    padding: 15px;
+
+    margin: 8px;
+
+    background: rgba(255,255,255,0.06);
+
+    border-radius: 12px;
+}
+
+.eco-box input {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+.eco-box .main-button {
+    margin-top: 20px;
+}
+
+
+/* ================= INDIA ================= */
+
+.india-grid {
+    max-width: 1000px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.india-grid div {
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.india-grid div:hover {
+    transform: scale(1.05);
+    background: rgba(20,220,120,0.15);
+}
+
+
+/* ================= PLEDGE ================= */
+
+.pledge-box {
+    max-width: 700px;
+    margin: 40px auto;
+
+    padding: 50px;
+
+    border-radius: 35px;
+
+    text-align: center;
+
+    border: 2px solid #36e980;
+}
+
+.big-leaf {
+    font-size: 80px;
+
+    animation: leaf 2s infinite alternate;
+}
+
+@keyframes leaf {
+
+    from {
+        transform: rotate(-8deg);
+    }
+
+    to {
+        transform: rotate(8deg) scale(1.1);
+    }
+}
+
+.pledge-box h3 {
+    font-size: 28px;
+    color: #7dffb2;
+    margin: 15px;
+}
+
+.pledge-box p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: #02130e;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer h2 {
+    color: #72ffa8;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px;
+    color: #c7eadd;
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        scroll-margin-top: 150px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .team-container,
+    .city,
+    .india-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .help-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .sdg-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px) {
+
+    .earth {
+        font-size: 100px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    .three-points,
+    .team-container,
+    .city,
+    .india-grid,
+    .help-grid,
+    .sdg-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sdg-head {
+        padding: 15px 14px;
+        gap: 10px;
+    }
+
+    .sdg-num {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .sdg-title {
+        font-size: 16px;
+    }
+
+    .sdg-emoji {
+        font-size: 22px;
+    }
+
+    .sdg-body {
+        margin: 0 14px 16px;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media(max-width:360px) {
+
+    .sdg-emoji {
+        display: none;
+    }
+
+}
+
+
+/* Respect people who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .sdg-panel,
+    .sdg-chevron,
+    .sdg {
+        transition: none;
+    }
+
+}
