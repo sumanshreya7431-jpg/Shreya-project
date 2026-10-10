@@ -580,6 +580,6 @@ function calculateScore() {
 function pledge() {
 
     document.getElementById("pledgeMessage").innerText =
-        "🎉 Thank you! Shreya, Shruti & Ashilipsa are Green Champions! 🌱";
+        "🎉 Thank you! Shreya, Shruti & Aashilipsa are Green Champions! 🌱";
 
 }
