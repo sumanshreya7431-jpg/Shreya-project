@@ -314,12 +314,13 @@ section h2 {
 
 /* ================= TEAM ================= */
 
+/* 2 members: two equal columns, centred */
 .team-container {
-    max-width: 1100px;
+    max-width: 780px;
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 
     gap: 30px;
 }
@@ -364,7 +365,7 @@ section h2 {
     box-shadow: 0 0 30px rgba(255,216,77,0.25);
 }
 
-/* ----- Shreya's photo ----- */
+/* ----- team photos ----- */
 
 .photo-wrap {
     position: relative;
